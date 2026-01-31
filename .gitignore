@@ -1,0 +1,20 @@
+.venv
+.env
+.env.prod
+db.sqlite3
+__pycache__/.venv/
+.python-version
+A
+CAHIER_DES_CHARGES_FINAL_COMPLET.md
+
+
+
+# Claude Code
+.claude
+.claude_history
+.claude_cache/
+
+
+# Hebergement
+.htaccess
+passenger_wsgi.py

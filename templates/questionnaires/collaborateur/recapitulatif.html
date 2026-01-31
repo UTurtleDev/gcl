@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Questionnaire enregistré{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'questionnaires/css/recapitulatif.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="recapitulatif-container">
+    <div class="card success-card">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        </div>
+
+        <h1>Questionnaire enregistré</h1>
+
+        <div class="success-message">
+            <p class="lead">
+                Le questionnaire a été enregistré avec succès.
+            </p>
+
+            <p>
+                Vous pouvez à tout moment consulter ou modifier ce questionnaire depuis le dashboard.
+            </p>
+        </div>
+
+        <div class="form-actions">
+            <a href="{% url 'collaborateur_identification' %}" class="btn btn-primary">
+                Nouveau questionnaire
+            </a>
+            <a href="{% url 'dashboard' %}" class="btn btn-secondary">
+                Retour au dashboard
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

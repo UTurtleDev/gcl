@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Merci - Questionnaire terminé{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'questionnaires/css/recapitulatif.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="recapitulatif-container">
+    <div class="card success-card">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        </div>
+
+        <h1>Merci !</h1>
+
+        <div class="success-message">
+            <p class="lead">
+                Votre questionnaire a bien été enregistré.
+            </p>
+
+            <p>
+                Le {{ CABINET_NAME }} vous remercie d'avoir pris le temps de remplir ce questionnaire.
+                Nous allons analyser vos réponses afin de vous proposer un accompagnement
+                personnalisé pour la transition vers la facturation électronique.
+            </p>
+
+            <p>
+                <strong>Nous reviendrons vers vous très prochainement</strong> pour échanger
+                sur votre situation et vous présenter les solutions adaptées à vos besoins.
+            </p>
+        </div>
+
+        <div class="next-steps">
+            <h3>Prochaines étapes</h3>
+            <ul class="steps-list">
+                <li>Analyse de votre questionnaire par nos équipes</li>
+                <li>Préparation d'une proposition d'accompagnement personnalisée</li>
+                <li>Contact de votre part pour échanger sur les solutions</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <p><small>
+                <strong>Une question ?</strong> N'hésitez pas à contacter le {{ CABINET_NAME }} :<br>
+                Email : {{ CABINET_EMAIL }}<br>
+                Téléphone : {{ CABINET_PHONE }}
+            </small></p>
+        </div>
+
+        <div class="form-actions">
+            <a href="{% url 'home' %}" class="btn btn-primary">
+                Retour à l'accueil
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
