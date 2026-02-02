@@ -190,8 +190,8 @@ CSRF_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_HTTPONLY = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://diagnostic-GCL.sitesdemo.net',
-    'https://diagnostic-GCL.sitesdemo.net',
+    'http://diagnostic-gcl.sitesdemo.net',
+    'https://diagnostic-gcl.sitesdemo.net',
 ]
 
 # Cache (pour API INSEE - 24h)
