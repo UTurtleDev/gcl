@@ -2,7 +2,9 @@
 .env
 .env.prod
 db.sqlite3
-__pycache__/.venv/
+__pycache__/
+*.pyc
+*.pyo
 .python-version
 A
 CAHIER_DES_CHARGES_FINAL_COMPLET.md
