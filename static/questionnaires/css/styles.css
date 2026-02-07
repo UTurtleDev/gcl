@@ -48,10 +48,24 @@ h1 {
     color: var(--gris-fonce);
 }
 
+.intro-title {
+    color: var(--bleue-fonce);
+    text-align: center;
+}
+
 h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+.intro-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.333;
+    margin-top: 70px;
+    margin-bottom: 40px;
+
 }
 
 h3 {
@@ -70,6 +84,12 @@ p {
     margin-bottom: 1rem;
 }
 
+.question  {
+    margin-bottom: 0rem;
+}
+
+
+
 a {
     color: var(--bleue-moyen);
     text-decoration: none;
@@ -82,6 +102,20 @@ a:hover {
 
 .strong {
     font-weight: bold;
+}
+
+ul {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+ul li {
+    margin-left: 1rem;
+}
+
+ol {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* ============================================================================
@@ -432,6 +466,14 @@ input[type="checkbox"] {
 .intro-text {
     max-width: 700px;
     margin: 0 auto;
+}
+
+.intro-thanks {
+    margin-top: 3rem;
+}
+
+.intro-signature {
+    margin-bottom: 3rem;
 }
 
 .cta-section {
