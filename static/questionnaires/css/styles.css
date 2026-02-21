@@ -284,6 +284,7 @@ ol {
 
 label {
     display: block;
+    margin-top: 40px;
     margin-bottom: 8px;
     font-weight: 500;
     color: var(--gris-fonce);
@@ -331,7 +332,7 @@ select.error {
 .form-actions {
     display: flex;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 /* Radio et Checkboxes */
