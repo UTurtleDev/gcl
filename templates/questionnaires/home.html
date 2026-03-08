@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Accueil - {{ CABINET_NAME }} - Facturation Électronique 2026{% endblock %}
+{% block title %}Accueil - Cabinet GCL - Facturation Électronique 2026{% endblock %}
 
 {% block content %}
 <div class="home-container">
@@ -23,7 +23,7 @@
             </p>
 
             <p>
-                Pour vous accompagner dans cette transition, le {{ CABINET_NAME }} met à votre disposition
+                Pour vous accompagner dans cette transition, le Cabinet GCL met à votre disposition
                 ce questionnaire en ligne qui nous permettra d'évaluer votre situation actuelle et
                 vos besoins spécifiques.
             </p>
@@ -45,7 +45,7 @@
             </div>
             <h2>Je suis un client</h2>
             <p>
-                Vous êtes client du {{ CABINET_NAME }} et souhaitez remplir
+                Vous êtes client du Cabinet GCL et souhaitez remplir
                 le questionnaire de diagnostic.
             </p>
             <a href="{% url 'client_introduction' %}" class="btn btn-primary btn-large">
@@ -63,7 +63,7 @@
             </div>
             <h2>Je suis un collaborateur</h2>
             <p>
-                Vous êtes collaborateur du {{ CABINET_NAME }} et souhaitez accéder
+                Vous êtes collaborateur du Cabinet GCL et souhaitez accéder
                 au dashboard de gestion.
             </p>
             <a href="{% url 'collaborateur_login' %}" class="btn btn-secondary btn-large">

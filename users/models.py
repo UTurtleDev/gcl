@@ -14,7 +14,7 @@ class Cabinet(models.Model):
 
 
 class User(AbstractUser):
-    """Custom user pour les collaborateurs du {{ CABINET_NAME }}"""
+    """Custom user pour les collaborateurs du Cabinet GCL"""
 
     email = models.EmailField(
         unique=True,
@@ -23,7 +23,7 @@ class User(AbstractUser):
 
     is_collaborateur = models.BooleanField(
         default=False,
-        help_text="Collaborateur du {{ CABINET_NAME }}"
+        help_text="Collaborateur du Cabinet GCL"
     )
 
     cabinet = models.ForeignKey(

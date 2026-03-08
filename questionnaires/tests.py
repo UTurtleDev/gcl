@@ -14,7 +14,7 @@ class HomePageTests(TestCase):
         """La page d'accueil se charge correctement"""
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, '{{ CABINET_NAME }}')
+        self.assertContains(response, 'Cabinet GCL')
 
     def test_mentions_legales_page_loads(self):
         """La page mentions légales se charge correctement"""
